@@ -1,0 +1,258 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"obte",
+				"obtenerVillano"
+			],
+			[
+				"mo",
+				"mostrarMensaje"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"pais",
+				"paisesVisitados"
+			],
+			[
+				"des",
+				"destinosFallidos"
+			],
+			[
+				"obtenerPais",
+				"obtenerPaisAViajar"
+			],
+			[
+				"pai",
+				"paisAViajar"
+			],
+			[
+				"p",
+				"pais"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ence",
+				"encerradoQueChoca"
+			],
+			[
+				"enc",
+				"encerradoQueSeQuedaSinEnergia"
+			],
+			[
+				"en",
+				"encerradoQueSeQuedaSinEnergio"
+			],
+			[
+				"encer",
+				"encerradoQueSobrevive"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/gaston/Documentos/projects/ember-quickstart/app/templates/application.hbs",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/models/movie.js",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/routes/movies.js",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/templates/movies.hbs",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/templates/components/movie-card.hbs",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/templates/components/movie-big-card.hbs",
+		"/home/gaston/Documentos/projects/ember-quickstart/app/styles/app.css",
+		"/home/gaston/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
+		"/home/gaston/Documentos/projects/ember-quickstart/.editorconfig",
+		"/home/gaston/Documentos/radar/radar.md",
+		"/home/gaston/Documentos/radar",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/app.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/views/mapamundi.html",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/routes.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/MapamundiController.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/ExpedienteController.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/services.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/ResolverMisterioController.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/views/resolverMisterio.html",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/views/expediente.html",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/index.html",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/resolverMisterioController.js",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/views/ordenDeArresto.html",
+		"/home/gaston/eclipseProjects/CarmenSanDiego-web/src/main/webapp/javascript/ordenDeArresto.js",
+		"/home/gaston/Documentos/laberinto.hs"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"welcome-page",
+			"welcome",
+			"}}",
+			"style",
+			"seleccionado",
+			"villanoAct",
+			"id",
+			"ordenCtr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "movie-big-card.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

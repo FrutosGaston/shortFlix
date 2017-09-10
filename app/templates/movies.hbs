@@ -1,14 +1,10 @@
 <h1>List of Movies</h1>
 
 <main class="container">
-  <section class="movies" id="movies">
-      <h2>Featured Movies</h2>
-    <div class="row">
-      {{#each model as |movie|}}
-        {{movie-card movie=movie}}
-      {{/each}}
-    </div>
-  </section>
+  {{movies-row movies=model.allMovies title='Featured Movies'}}
+  {{movies-row movies=model.allMovies title='Featured Movies'}}
+  {{movies-row movies=model.allMovies title='Featured Movies'}}
+  {{movies-row movies=model.stephenMovies title='Stephen King`s Movies'}}
 </main>
 
 {{outlet}}
