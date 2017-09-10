@@ -1,0 +1,16 @@
+$main-color: #12ae63;
+
+@import 'footer';
+@import 'movie_card';
+@import 'movie_big_card';
+@import "ember-bootstrap/bootstrap";
+
+h1 { margin-left: 16px; }
+
+body {
+  background: #151514;
+}
+
+h1, h2 {
+  color: $main-color;
+}
