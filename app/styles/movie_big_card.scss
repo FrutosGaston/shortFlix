@@ -7,7 +7,7 @@
   font-family: 'Helvetica', sans-serif, 'Ariel';
   background: #ffffff;
   color: #555555;
-  margin-top: 5px;
+  margin-top: 0px;
   width: 750px;
   max-width: 900px;
   min-height: 300px;
@@ -35,7 +35,11 @@
 .moviecard .movie-title {
   font-size: 36px;
   padding-bottom: 3px;
-  color: #333333;
+  color: #333333;    
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 375px;
+  white-space: nowrap;
 }
 .moviecard .movie-title .movie-year {
   margin-left: 10px;
