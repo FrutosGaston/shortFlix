@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+.idea/
 
 # dependencies
 /node_modules
@@ -13,10 +14,11 @@
 /connect.lock
 /coverage/*
 /libpeerconnection.log
+npm-debug.log
+testem.log
 npm-debug.log*
 yarn-error.log
 testem.log
-.editorconfig
 
 # ember-try
 .node_modules.ember-try/
