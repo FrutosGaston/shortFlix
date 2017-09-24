@@ -4,7 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'short-flix',
-    environment,
+    environment: environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
