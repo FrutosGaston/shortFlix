@@ -1,8 +1,16 @@
-<section class="movies" id="movies">
+<section class="movies movies-carousel" id="movies">
   <h2>{{title}}</h2>
-  <div class="row">
-    {{#each movies as |movie|}}
-      {{movie-card movie=movie}}
-    {{/each}}
+  <div class="col-md-10 col-md-offset-1">
+    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+      <div class="carousel-inner">
+        {{#each movies as |movie|}}
+          <div class="item active">
+            {{movie-card movie=movie}}
+          </div>
+        {{/each}}
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
   </div>
 </section>

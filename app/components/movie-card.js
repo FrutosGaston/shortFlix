@@ -6,7 +6,9 @@ export default Ember.Component.extend({
       this.set('bigCardShown', true);
     },
     hideBigCard(){
-      this.set('bigCardShown', false);
+      var focussedElement = document.activeElement;
+      var isFocussed = this.$().has(focussedElement).length > 0
+      isFocussed ? null : this.set('bigCardShown', false);
     }
   }
 });

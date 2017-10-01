@@ -13,10 +13,10 @@ export default Ember.Component.extend({
   actions: {
     playTrailer() {
       toggleVideo('show');
-      $(".moviecard").addClass("movie-view-trailer");
+      this.$(".moviecard").addClass("movie-view-trailer");
     },
     backToInfo(){
-      $(".moviecard").removeClass("movie-view-trailer");
+      this.$(".moviecard").removeClass("movie-view-trailer");
       toggleVideo('hide');
     }
   }
