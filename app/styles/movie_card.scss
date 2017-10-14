@@ -1,11 +1,23 @@
-.title-header {padding: .75rem 1.25rem; background-color: $main-color; border-bottom: 1px solid transparent; cursor: pointer;}
-.title-header h3 {font-size: 1rem; margin: 0;}
 .movies {margin-top: 2rem;}
 .movies {margin-bottom: .60rem;}
 .series {margin-bottom: .60rem;}
 
+.title-header h3 {
+	font-size: 1rem; 
+	margin: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.title-header {
+	padding: .75rem 1.25rem; 
+	background-color: $main-color; 
+	border-bottom: 1px solid transparent; 
+	cursor: pointer;
+}
+
 .img-card { 
-  margin-bottom: .40rem; 
   width: 100%;
   cursor: pointer;
 }
@@ -17,4 +29,54 @@
 
 .movies-row {
   overflow-x: scroll;
+}
+
+.card-block {
+  position: relative;
+  background: #262626;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.card-block .details {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.card-block:hover .img-card {
+  left: -100%;
+}
+
+.card-block .details {
+  background: #262626;
+  top: 0;
+  left: 100%;
+  padding: 8px 5px;
+  position: absolute;
+  cursor: default;
+}
+
+.card-block:hover .details {
+	top: 0;
+	left: 0;
+}
+
+.card-block .details h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 5px;
+  border-bottom: 2px solid #fff;
+  font-size: 16px
+}
+
+.card-block .details p {
+	padding: 0 5px;
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: 12px;
 }

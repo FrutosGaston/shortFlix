@@ -1,4 +1,4 @@
-<div onmouseover={{action "showBigCard"}} onmouseleave={{action "hideBigCard"}} class="col-lg-2 col-md-3 col-sm-4">
+<div class="col-lg-2 col-md-3 col-sm-4">
     <article class="card">
     <header class="title-header">
       <h3>{{movie.title}}</h3>
@@ -7,9 +7,11 @@
       <div class="img-card">
         <img src={{movie.cover}} alt="Movie" class="w-100" />
       </div>
+      <div class="details">
+        <h2>{{movie.title}}</h2>
+        <p>{{movie.description}}</p>
+        {{#link-to "index" class="navbar-brand"}}View more{{/link-to}}
+      </div>
     </div>
   </article>
-  {{#if bigCardShown}}
-    {{movie-big-card movie=movie}}
-  {{/if}}
 </div>
