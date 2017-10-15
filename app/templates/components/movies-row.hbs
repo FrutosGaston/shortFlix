@@ -1,6 +1,9 @@
 <section class="movies" id="movies">
   <h2>{{title}}</h2>
-  <div class="row">
+  <div class="row carousel">
+    {{#each movies as |movie|}}
+      {{movie-card movie=movie}}
+    {{/each}}
     {{#each movies as |movie|}}
       {{movie-card movie=movie}}
     {{/each}}
