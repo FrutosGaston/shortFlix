@@ -12,6 +12,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [MySQL community server](https://dev.mysql.com/)
 
 ## Installation
 
@@ -19,8 +20,16 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `sudo apt-get install mysql-server`
 
-## Running / Development
+## Database set up
+* mysql -u user -p
+* create database Running;
+
+
+
+
+## shortflix / Development
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
