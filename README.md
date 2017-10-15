@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 
 ## Database set up
 * mysql -u user -p
-* create database Running;
+* create database shortflix;
 
 
 
