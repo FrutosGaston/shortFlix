@@ -7,7 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('movies');
+  this.route('shorts');
+  this.route('short', { path: '/short/:short_id' });
 });
 
 export default Router;
