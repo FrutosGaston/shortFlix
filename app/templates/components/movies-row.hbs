@@ -1,11 +1,8 @@
 <section class="movies" id="movies">
   <h2>{{title}}</h2>
   <div class="row carousel">
-    {{#each shorts as |movie|}}
-      {{movie-card movie=movie}}
-    {{/each}}
-    {{#each shorts as |movie|}}
-      {{movie-card movie=movie}}
+    {{#each shorts as |movie index|}}
+      {{movie-card movie=movie id=index}}
     {{/each}}
   </div>
 </section>
