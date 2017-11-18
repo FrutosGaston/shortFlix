@@ -1,24 +1,54 @@
-image: node:7.10
+stages:
+  - prepare
+  - test
+  - build
+  - deploy
 
-cache:
-  paths:
-    - node_modules/
-    - bower_components/
+variables:
+  EMBER_CLI_VERSION: "2.16.2"
+  BOWER_VERSION: "1.8.2"
+  PHANTOMJS_VERSION: "2.1.15"
 
-before_script:
-  # Install Chrome
-  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-  - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
-  - apt-get update -yqqq
-  - apt-get install -y google-chrome-stable > /dev/null 2>&1
-
-  - npm install --silent
-  
-  # Remove if you don't have bower deps
-  - npm install -g bower
-  - bower install --allow-root --silent
+install_dependencies:
+  image: node:6.10.2
+  stage: prepare
+  tags:
+    - docker
+  cache:
+    paths:
+      - node_modules
+      - bower_components
+  before_script:
+    - npm config set spin false
+    - npm install ember-cli@${EMBER_CLI_VERSION}
+    - npm install bower@${BOWER_VERSION}
+    - npm install phantomjs-prebuilt@${PHANTOMJS_VERSION}
+  script:
+    - npm install
+    - $(npm bin)/bower install --allow-root
+  artifacts:
+    paths:
+      - node_modules/
+      - bower_components/
 
 test:
+  image: node:6.10.2
   stage: test
+  tags:
+    - docker
+  cache:
+    paths:
+      - node_modules
+      - bower_components
+  before_script:
+    - set -xe
+    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+    - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
+    # Update packages
+    - apt-get update -yqqq
+    # Install Chrome browser
+    - apt-get install -y google-chrome-stable
+    # Install Virtual Display emulator
+    - apt-get install -y xvfb
   script:
-    - ./node_modules/.bin/ember test
+    - xvfb-run -a npm test
