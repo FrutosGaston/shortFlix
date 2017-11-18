@@ -1,0 +1,23 @@
+image: node:7.10
+
+cache:
+  paths:
+    - node_modules/
+    - bower_components/
+
+before_script:
+  # Install Chrome
+  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+  - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
+  - apt-get update -yqqq
+  - apt-get install -y google-chrome-stable > /dev/null 2>&1
+
+  - npm install --silent
+  
+  - npm install -g bower
+  - bower install --allow-root --silent
+
+test:
+  stage: test
+  script:
+    - ./node_modules/.bin/ember test
