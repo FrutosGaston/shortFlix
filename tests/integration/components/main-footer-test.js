@@ -5,13 +5,11 @@ moduleForComponent('main-footer', 'Integration | Component | main footer', {
   integration: true
 });
 
-test('it renders', function(assert) {
+test('it shows the logo', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.render(hbs`{{main-footer}}`);
-
-  assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
@@ -20,5 +18,5 @@ test('it renders', function(assert) {
     {{/main-footer}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('.logofooter').length, 1);
 });
