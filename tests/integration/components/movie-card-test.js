@@ -6,12 +6,6 @@ moduleForComponent('movie-card', 'Integration | Component | movie card', {
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{movie-card}}`);
-
-  assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
@@ -20,5 +14,21 @@ test('it renders', function(assert) {
     {{/movie-card}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'View more');
+});
+
+test('it renders a movie when its present', function(assert) {
+  // Set any properties with this.set('myProperty', 'value');
+  // Handle any actions with this.on('myAction', function(val) { ... });
+
+  var movie = { title: 'Titanic', cover: '', description: 'Jack dies' }
+  this.set('movieToShow', movie);
+  
+  // Template block usage:
+  this.render(hbs`
+    {{#movie-card movie=movieToShow}}
+    {{/movie-card}}
+  `);
+
+  assert.equal(this.$('h3').text().trim(), 'Titanic');
 });

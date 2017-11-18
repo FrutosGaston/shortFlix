@@ -1,0 +1,10 @@
+<div class="video-header">
+  <h1 class="short-video-title">{{model.title}}</h1>
+  <h3 class="return-button">{{#link-to "shorts"}}Volver{{/link-to}}</h3>
+</div>
+<div id="youvideo" class="short-video-container">
+  <iframe src={{model.video}} width="840" height="472.5" frameborder="0" allowfullscreen="allowfullscreen" allowScriptAccess="always" class="video-iframe"></iframe>
+</div>
+<div class="short-description-container">
+  <p class="short-description">{{model.description}}</p>
+</div>

@@ -5,7 +5,7 @@ import ApplicationRouteMixin from
 export default Ember.Route.extend(ApplicationRouteMixin, {
 	model() {
     return Ember.RSVP.hash({
-      allMovies: Ember.$.getJSON('/api/shorts')
+      shorts: Ember.$.getJSON('/api/shorts')
     })
   }
 });

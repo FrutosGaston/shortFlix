@@ -1,3 +1,4 @@
+
 @import 'ember-paper';
 
 .paper-right {
@@ -6,11 +7,14 @@
 
 $main-color: #0095B4;
 
+
+
 @import 'ember-bootstrap/bootstrap';
 @import 'footer';
 @import 'movie_card';
 @import 'navbar';
 @import 'carousel';
+@import 'short_view';
 
 h1 { margin-left: 16px; }
 

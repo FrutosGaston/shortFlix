@@ -2,7 +2,7 @@
 {{#paper-toolbar }}
   <div class="md-toolbar-tools">
     {{#paper-button raised=true primary=true}}{{#link-to 'index'}}Home{{/link-to}}{{/paper-button}}
-    {{#paper-button raised=true primary=true}}{{#link-to 'movies'}}Movies{{/link-to}}{{/paper-button}}
+    {{#paper-button raised=true primary=true}}{{#link-to 'shorts'}}Shorts{{/link-to}}{{/paper-button}}
     <div class="paper-right">
       {{paper-icon 'person'}}
       {{#if session.isAuthenticated}}
@@ -13,7 +13,9 @@
     </div>
     
   </div>
+
 {{/paper-toolbar}}
+
 
 {{outlet}}
 
