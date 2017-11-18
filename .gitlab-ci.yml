@@ -14,6 +14,7 @@ before_script:
 
   - npm install --silent
   
+  # Remove if you don't have bower deps
   - npm install -g bower
   - bower install --allow-root --silent
 
