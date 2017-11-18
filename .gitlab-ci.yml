@@ -25,7 +25,6 @@ install_dependencies:
     - npm install phantomjs-prebuilt@${PHANTOMJS_VERSION}
   script:
     - npm install
-    - $(npm bin)/bower install --allow-root
   artifacts:
     paths:
       - node_modules/
@@ -51,4 +50,4 @@ test:
     # Install Virtual Display emulator
     - apt-get install -y xvfb
   script:
-    - xvfb-run -a npm test
+    - npm test
