@@ -1,4 +1,10 @@
-$main-color: #12ae63;
+@import 'ember-paper';
+
+.paper-right {
+    margin-left: auto;
+}
+
+$main-color: #0095B4;
 
 @import 'ember-bootstrap/bootstrap';
 @import 'footer';
@@ -9,10 +15,178 @@ $main-color: #12ae63;
 h1 { margin-left: 16px; }
 
 body {
-  background: #151514;
+  background: #3F51B5;
   overflow-x: hidden;
 }
 
 h1, h2 {
-  color: $main-color;
+  color: #000000;
+}
+
+/* Settings - feel free to play with these */
+$overlay_opacity: 0.3; // 0-1
+$overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video-wrapper' is the name of this particular video
+ */
+.demo-video-wrapper {
+	background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+/* Video overlay and content */
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none; /* Allows right click menu on the video */
+	background: url($overlay_pattern) left top repeat;
+  opacity: $overlay_opacity;
+}
+.video-hero--content {
+	position: relative;
+	text-align: center;
+	color: #FFF;
+  margin: 150px 0;
+	text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.video-hero--content h2 {
+	font-size: 34px;
+	margin: 0 0 10px;
+}
+.video-hero--content p {
+	font-size: 20px;
+	margin: 0;
+}
+
+/* Other stuff */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000000;
+}
+a {
+	text-decoration: none;
+	color: #a46497;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.page-width {
+	width: 92%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#header {
+	background: #2c2d33;
+	padding: 2em 0;
+}
+#header a {
+	color: #FFF;
+}
+.title {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.subtitle {
+	display: block;
+	font-weight: normal;
+	font-size: 15px;
+	color: #000000;
+}
+a:hover .subtitle {
+	color: #FFF;
+}
+#site-title {
+	float: left;
+	margin: 0;
+}
+#content {
+	padding: 40px 0;
+}
+
+.fade-in-image {
+	position: relative;
+	overflow: hidden;
+	height: 1500px;
+	width: 1000px;
+  }
+  
+  .fade-in-image #fade-in-image-placeholder {
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #2A89EB;
+  }
+  
+  .fade-in-image #fade-in-image-placeholder.fade-in {
+	opacity: 0;
+	transition: opacity 1.5s linear;
+  }
+
+  .obj-wrapper-movies {
+    position:relative;
+    width:100%;
+    padding-bottom:60%;
+    height:10;
+    overflow:hidden;
+	}
+	.obj-wrapper-login {
+    position:relative;
+    width:100%;
+    padding-bottom:30%;
+    height:10;
+    overflow:hidden;
+	}
+	.obj-wrapper-index {
+    position:relative;
+    width:100%;
+    padding-bottom:40%;
+    height:10;
+    overflow:hidden;
+  }
+  .content_index {
+    position: absolute;
+    width:100%;
+	  height:200%;
+	background-size: contain;
+    background-image: url('http://img.fenixzone.net/i/5E4ZOY0.jpeg');
+	}
+	
+	.content_movies {
+		position:absolute;
+    width:100%;
+	height:150%;
+	background-size: cover;
+    background-image: url('http://img.fenixzone.net/i/ckB5FaQ.jpeg');
+	}
+
+	.content_login {
+		position:absolute;
+    width:100%;
+	height:100%;
+	background-size: contain;
+    background-image: url('http://www.comingsoon.net/assets/uploads/2017/04/rampagefilming.jpg');
+	}
+
+.container_shadow {
+    margin-top: 50px;
+    box-shadow: 0 0 30px black;
+    padding:0 15px 0 15px;
 }

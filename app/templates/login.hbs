@@ -1,0 +1,35 @@
+<div class="obj-wrapper-login"> 
+ <div class="content_login">
+     <br><br>   
+<div class="container">
+    <div class="row align-items-center">
+    <div class="col">  </div>
+    <div class="col container-shadow">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Login</div>
+            <div class="panel-body background:yellow">
+                <form {{action 'authenticate' on='submit'}}>
+                    <label for="identification">Login</label>
+                    {{input value=identification placeholder='Enter Login' class='form-control'}}
+                    <br>
+                    <label for='password'>Pasword</label>
+                    {{input value=password placeholder='Enter Password' class='form-control' type='password'}}
+                    <br>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                {{#if errorMessage}}
+                <p>
+                    <strong>Login failed:</strong>
+                    <code>{{errorMessage}}</code>
+                </p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+    </div>
+</div>
+ </div>
+</div>
+{{outlet}}
