@@ -1,15 +1,15 @@
 <div>
   <article class="card">
     <header class="title-header">
-      <h3>{{movie.title}}</h3>
+      <h3>{{short.title}}</h3>
     </header>
     <div class="card-block">
       <div class="img-card">
-        <img src={{movie.cover}} alt="Movie" class="w-100" />
+        <img src={{short.cover}} alt="Movie" class="w-100" />
       </div>
       <div class="details">
-        <h2>{{movie.title}}</h2>
-        <p>{{movie.description}}</p>
+        <h2>{{short.title}}</h2>
+        <p>{{short.description}}</p>
         {{#link-to "short" id class="navbar-brand"}}View more{{/link-to}}
       </div>
     </div>

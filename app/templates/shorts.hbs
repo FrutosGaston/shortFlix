@@ -1,7 +1,24 @@
-<h1>List of Shorts</h1>
+<div class="obj-wrapper-movies">
+ <div class="content_movies">
+    <br>
 
+<div class="panel panel-primary">
+    <div class="panel-heading text-center panel-relative"><h4>Most Viewed Shorts</h4></div>
+</div>
 <main class="container">
-  {{movies-row shorts=model.shorts title='Featured Shorts'}}
+  {{movies-row shorts=model.shorts}}
 </main>
+<br>
+<div class="panel panel-primary">
+    <div class="panel-heading text-center panel-relative"><h4>Latest Shorts</h4></div>
+</div>
+<main class="container">
+  {{movies-row shorts=model.shorts}}
+</main>
+
+
+</div>
+</div>
+
 
 {{outlet}}
